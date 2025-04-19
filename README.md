@@ -1,7 +1,5 @@
 # Portfolio
 
-=======
-
 # My Folio Portfolio
 
 This is a modern, professional portfolio website built with React and Vite.

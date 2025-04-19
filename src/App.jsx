@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Moodboard from './components/Moodboard';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import './styles/global.css';
 import './styles/Navbar.css';
 
@@ -32,6 +33,7 @@ function App() {
           <p>&copy; {new Date().getFullYear()} Hency Kachoria. All rights reserved.</p>
         </div>
       </footer>
+      <SpeedInsights />
     </motion.div>
   );
 }
