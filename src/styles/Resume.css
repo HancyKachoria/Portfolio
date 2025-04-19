@@ -1,0 +1,167 @@
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.resume-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-luxe);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  border-bottom: 2px solid var(--color-navy);
+  padding-bottom: var(--space-4);
+}
+
+.section-icon {
+  font-size: var(--text-2xl);
+  color: var(--color-navy);
+  margin-right: var(--space-3);
+}
+
+.section-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-2xl);
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.education-item,
+.experience-item {
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.education-item:last-child,
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.education-item h4,
+.experience-item h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-lg);
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.company,
+.location,
+.degree,
+.date {
+  font-family: 'Lato', sans-serif;
+  font-size: var(--text-base);
+  color: var(--color-espresso);
+  margin-bottom: var(--space-1);
+}
+
+.date {
+  color: var(--color-terracotta);
+  font-style: italic;
+}
+
+.experience-item ul {
+  margin-top: var(--space-4);
+  padding-left: var(--space-6);
+}
+
+.experience-item li {
+  font-family: 'Lato', sans-serif;
+  font-size: var(--text-base);
+  color: var(--color-espresso);
+  margin-bottom: var(--space-2);
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  font-family: 'Lato', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--color-navy);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-normal);
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.certification-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  font-family: 'Lato', sans-serif;
+  font-size: var(--text-sm);
+  color: var(--color-navy);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-normal);
+}
+
+.certification-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.professional-summary {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  margin-top: var(--space-8);
+  box-shadow: var(--shadow-luxe);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.professional-summary h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: var(--text-2xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-4);
+}
+
+.professional-summary p {
+  font-family: 'Lato', sans-serif;
+  font-size: var(--text-base);
+  color: var(--color-espresso);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .professional-summary {
+    padding: var(--space-6);
+  }
+} 

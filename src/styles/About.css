@@ -1,0 +1,140 @@
+.about-section {
+  padding: 80px 20px;
+  background-color: var(--color-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--color-navy);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-gold-muted);
+  margin: 20px auto;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-description {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-soft-navy);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.highlight-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover .highlight-icon {
+  transform: scale(1.1);
+}
+
+.highlight-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 15px;
+}
+
+.highlight-description {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-soft-navy);
+  line-height: 1.6;
+}
+
+/* Creative certification styles */
+.highlight-item.creative {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.85) 100%
+  );
+}
+
+.highlight-item.creative .highlight-icon {
+  color: var(--color-terracotta);
+}
+
+@media (max-width: 992px) {
+  .highlights-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+
+  .about-container {
+    padding: 0 15px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+
+  .highlights-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .highlight-item {
+    padding: 20px;
+  }
+} 
